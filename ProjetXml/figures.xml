@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scene>
+  <figures>
+    <cercle id="1" rayon="52">
+      <point x="74" y="98" />
+    </cercle>
+    <carre id="2" arc="100">
+      <point x="67" y="87" />
+    </carre>
+    <rectangle id="3" longeur="72" largeur="92">
+      <point x="17" y="81" />
+    </rectangle>
+    <Droit id="4">
+      <point x="187" y="111" />
+      <point x="130" y="126" />
+    </Droit>
+  </figures>
+  <rule>
+    <description>arc</description>
+  </rule>
+</scene>

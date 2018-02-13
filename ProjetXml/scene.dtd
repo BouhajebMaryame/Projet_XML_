@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT scene (figures,rules)>
+<!ELEMENT figures (cercle*,triangle*,carre*,rectangle*,Droit*)>
+<!ELEMENT cercle (point)>
+<!ATTLIST cercle
+     id ID #REQUIRED
+>
+<!ELEMENT point ANY>
+<!ATTLIST point
+     x CDATA #REQUIRED
+     y CDATA #REQUIRED
+>
+<!ATTLIST cercle
+    rayon CDATA #REQUIRED >
+<!ELEMENT triangle (point,point,point)>
+<!ATTLIST triangle
+    id ID #REQUIRED
+    hauteur CDATA #REQUIRED
+    base CDATA #REQUIRED
+    <!ELEMENT point ANY>
+<!ATTLIST point
+     x CDATA #REQUIRED
+     y CDATA #REQUIRED
+>
+>
+<!ELEMENT carre (point>
+<!ATTLIST carre
+    id ID #REQUIRED
+    arc CDATA #REQUIRED
+    <!ELEMENT point ANY>
+>
+<!ELEMENT rectangle (point)>
+<!ATTLIST rectangle
+    id ID #REQUIRED
+    largeur CDATA #REQUIRED
+    longeur CDATA #REQUIRED
+ >
+<!ELEMENT Droit (point,point)>
+<!ATTLIST Droit
+    id ID #REQUIRED
+>
+<!ELEMENT rule (description)>
+<!ELEMENT rule (type,figure+,description)>
+<!ELEMENT type (#PCDATA)>
+ <!ELEMENT figure ANY>
+ <!ATTLIST figure
+      idref IDREF #REQUIRED
+>
+ <!ELEMENT description (#PCDATA)>
